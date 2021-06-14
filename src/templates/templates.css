@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rancho', cursive;
+    background-color: #FFF6F4;   
+  }
+  
+  .fondo-inicio {
+    background-image: url("../img/fondo.PNG");
+    background-size: cover;
+}
+  
+  .inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #ffeaeae7;
+    width: 50vw;
+    height: 100vh;
+    margin-left: 25vw;   
+  }
+  
+  .logoBurger {
+    width: 34vw;
+    height: 26vw;
+  }
+ 
+  .error-template {
+    height: 100vh;
+    background-color: #F3F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .error-template p {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: monospace;
+  }
+  
+  .salon-template {
+    display: flex;
+  }
+ .salon-template hr {
+   background-color: #FF8C04;
+   margin: -7vh 0 0 2vw;
+   height: 1vh;
+   width: 25vw;
+ }
+ 
+  .salon-content {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    margin: 2vw 0 0 3vw; 
+  }
+  .salon-content nav {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+  }
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+  width: 35vw;
+  height: 70vh;
+}
+.menu li {
+  list-style: none;
+  margin: 2vw 0 0 -2.5em;
+}
+.factura {
+  width: 40vw;
+  height: 70vh;
+}
+  .cocina-template {
+    display: flex;
+  }
+  .cocina-template hr {
+    background-color: #FF8C04;
+    margin: -7vw 0 0 2vw;
+    height: 1vh;
+    width: 30vw;
+  }
+  .caja-template {
+    display: flex;
+  }
+  .caja-template hr {
+    background-color: #FF8C04;
+    margin: -6vw 0 0 2vw;
+    height: 1vh;
+    width: 25vw;
+  }
