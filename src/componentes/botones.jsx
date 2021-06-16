@@ -1,5 +1,8 @@
+import React, { useState } from 'react';
+import { InputDelete, InputAdd, InputRemove, InputMenu } from './inputBurger';
 import './componentes.css';
 import './buttonBurger.css';
+
 
 export function ButtonPrimary(props) {
     return (
@@ -32,36 +35,27 @@ export function ButtonOrange(props) {
 }
 
 export function ButtonComanda(props) {
+    const [content, setContent] = useState(false);
+    
+
     return (
-        <div id="buttonBurguer">
-            <nav className="nav">
-                <input type="checkbox" className="nav__cb" id="menu-cb" />
-                <div className="nav__content">
-                    <ul className="nav__items">
-                        <li className="nav__item">
-                            <span className="nav__item-text">
-                                Home
-                            </span>
-                        </li>
-                        <li className="nav__item">
-                            <span className="nav__item-text">
-                                Works
-                            </span>
-                        </li>
-                        <li className="nav__item">
-                            <span className="nav__item-text">
-                                About
-                            </span>
-                        </li>
-                        <li className="nav__item">
-                            <span className="nav__item-text">
-                                Contact
-                            </span>
-                        </li>
-                    </ul>
+        <div className="button-comanda">
+            {content ? <div className="active-options">
+                <div
+                    onClick={() => {
+                        setContent(false)
+                    }}> X </div>
+                <div className="options">
+                    <InputAdd producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
+                    <InputRemove producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
+                    <InputDelete producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
                 </div>
-                <label className="nav__btn" htmlFor="menu-cb"></label>
-            </nav>
+            </div>
+                : <button className="button-change" onClick={() => {
+                    setContent(true)
+                }}> <InputMenu/></button>}
+
+
         </div>
     )
 }

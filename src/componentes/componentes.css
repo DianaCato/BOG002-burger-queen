@@ -152,7 +152,7 @@ input[value=" vegetariana"]:focus + svg {
 }
 .comanda ul li {  
 	border-bottom:1px dashed #cfd2d2;
-	padding:20px 0;
+	padding:10px 0;
     font-size: 25px;
     
 }
@@ -164,16 +164,9 @@ input[value=" vegetariana"]:focus + svg {
     text-align-last: justify;
     font-size: 30px;
 }
-.comanda ul li:hover { 
-    -moz-box-shadow:3px 5px 7px rgba(0,0,0,.7);
-    -webkit-box-shadow: 3px 5px 7px rgba(0,0,0,.7);
-    box-shadow:3px 5px 7px rgba(0,0,0,.7);
-  cursor:pointer;
-  background:#d8e9f9;
-}
 .orden {
     background-color: #ffff;
-    height: 25em;
+    height: 24em;
     overflow: scroll;
     
 }
@@ -207,10 +200,18 @@ justify-content: space-between;
 }
 .spam-1 {
     text-indent: 3vw;
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+  .spam-2 {
+    width: 40%;
+    margin-left: -10%;
   }
 .spam-3 {
     margin-right: 3vw;
-    margin-left: 20px;
+    margin-left: -20%;
 }
 
+.comanda .btn-2 {
+  width: 180px;
+margin: 5px 10px 5px 10px;
+}
