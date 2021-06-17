@@ -1,8 +1,11 @@
 import React from 'react';
 import MenuLateral from '../componentes/menuLateral';
 import Titulo from '../componentes/titulo';
+import {useFirebaseApp} from 'reactfire';
 
 const Cocina = () => {
+    const firebase = useFirebaseApp();
+    console.log(firebase)
     return(
         <div className='cocina-template'>
             <MenuLateral/>
