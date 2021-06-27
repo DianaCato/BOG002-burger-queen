@@ -12,7 +12,19 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "reactfire": "^3.0.0-rc.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "workbox-background-sync": "^5.1.3",
+    "workbox-broadcast-update": "^5.1.3",
+    "workbox-cacheable-response": "^5.1.3",
+    "workbox-core": "^5.1.3",
+    "workbox-expiration": "^5.1.3",
+    "workbox-google-analytics": "^5.1.3",
+    "workbox-navigation-preload": "^5.1.3",
+    "workbox-precaching": "^5.1.3",
+    "workbox-range-requests": "^5.1.3",
+    "workbox-routing": "^5.1.3",
+    "workbox-strategies": "^5.1.3",
+    "workbox-streams": "^5.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": " web app to take orders in a fast food restaurant",
+  "main": "index.js",
+  "repository": "https://github.com/DianaCato/BOG002-burger-queen.git",
+  "author": "DianaCato <diana.catolico@hotmail.com>",
+  "license": "MIT"
 }

@@ -8,7 +8,10 @@
     width: 50px;
     text-indent: 12px;
     color:firebrick;
-    margin: 0 0 -10px -15px;
+    margin: 0 -10px -10px -15px;
+}
+.active-options div:first-child{
+    margin-left: 20px;
 }
 .options {
     display: flex;
@@ -33,4 +36,5 @@
 .button-change {
     background-color: #ffff;
     border:none;   
+    margin-right: -2vw;
 }

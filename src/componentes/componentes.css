@@ -152,7 +152,7 @@ input[value=" vegetariana"]:focus + svg {
 }
 .comanda ul li {  
 	border-bottom:1px dashed #cfd2d2;
-	padding:10px 0;
+	padding:5px ;
     font-size: 25px;
     
 }
@@ -199,14 +199,14 @@ justify-content: space-between;
 }
 .spam-1 {
     text-indent: 3vw;
-    margin-right: 10px;
+    width: 1vw;
   }
   .spam-2 {
-    width: 40%;
-    margin-left: -10%;
+    width: 56%;
+    margin-left: -13%;
   }
 .spam-3 {
-    margin-right: 3vw;
+    margin-right: 4vw;
     margin-left: -20%;
 }
 
@@ -217,4 +217,34 @@ justify-content: space-between;
 }
 .btn-comanda button {
   width: 38%;
+}
+
+@media all and (orientation: portrait){
+  .btn-1{
+    width: 50vw;
+    height: 10vh;
+  }
+  .btn-2 {
+    width: 25vw; 
+  }
+  .menu .btn-2 {
+    margin-bottom: 3vh;
+  }
+  .btn-3 {
+    height: 6vh;
+    width: 40vw;
+  }
+  .titulo {
+    font-size: 4vh;
+  }
+  .orden {
+    height: 20vh;
+    width: 70vw;
+  }
+  .orden li:first-child {
+    width: 60vw;
+  }
+  .orden li {
+    width: 65vw;
+  }
 }
