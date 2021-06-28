@@ -26,7 +26,7 @@
       "src": "logo_348.png",
       "type": "image/png",
       "sizes": "348x348",
-      "purpose" : "any maskable"
+      "purpose" : "maskable"
     }
   ],
   "start_url": ".",
