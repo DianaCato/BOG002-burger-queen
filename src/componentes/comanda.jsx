@@ -41,7 +41,8 @@ export default function Comanda({ pedido, setPedido }) {
             .doc().set({
                 lista,
                 cliente: nombreCliente,
-                mesa: numeroMesa
+                mesa: numeroMesa,
+                date: new Date()
             });
     }
     const handleReset = () => {

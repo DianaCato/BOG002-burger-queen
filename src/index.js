@@ -28,3 +28,7 @@ serviceWorkerRegistration.register();
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+window.addEventListener('appinstalled', function() {
+  console.log('Thank you for installing our app!');
+});

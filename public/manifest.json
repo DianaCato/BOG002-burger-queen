@@ -8,14 +8,25 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo_164.png",
+      "type": "image/png",
+      "sizes": "164x164"
+    },
+    {
+      "src": "logo_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo_461.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "461x461"
+    },
+    {
+      "src": "logo_348.png",
+      "type": "image/png",
+      "sizes": "348x348",
+      "purpose" : "any maskable"
     }
   ],
   "start_url": ".",

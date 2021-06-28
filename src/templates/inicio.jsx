@@ -11,13 +11,13 @@ class Inicio extends Component {
                 <div className='inicio'>
                     <img className='logoBurger' src={logoBurger} alt='logo-hambrurguer' />
                     <Link to='/salon'>
-                        <ButtonPrimary text='Salón' href='/salon' />
+                        <ButtonPrimary text='Salón' />
                     </Link>
                     <Link to='/cocina'>
-                        <ButtonPrimary text='Cocina' href='/cocina' />
+                        <ButtonPrimary text='Cocina' />
                     </Link>
                     <Link to='/caja'>
-                        <ButtonPrimary text='Caja' href='/caja' />
+                        <ButtonPrimary text='Caja' />
                     </Link>
                 </div>
             </div>
