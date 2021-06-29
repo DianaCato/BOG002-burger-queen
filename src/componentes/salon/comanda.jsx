@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFirestore } from 'reactfire';
 // eslint-disable-next-line no-unused-vars
 import firebase from 'firebase/firestore';
-import { ButtonComanda } from './botones';
+import { ButtonComanda } from '../botones/botones';
 
 export default function Comanda({ pedido, setPedido }) {
     let cliente = {};

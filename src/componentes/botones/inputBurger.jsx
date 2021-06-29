@@ -1,5 +1,5 @@
 import React from 'react';
-import './componentes.css';
+import '../componentes.css';
 
 export function InputBurger() {
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logoBurger from '../img/logo.png'
-import { ButtonPrimary } from '../componentes/botones'
+import { ButtonPrimary } from '../componentes/botones/botones'
 import './templates.css'
 
 class Inicio extends Component {

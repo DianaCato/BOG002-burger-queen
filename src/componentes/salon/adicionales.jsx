@@ -1,6 +1,6 @@
 import React from 'react';
-import './componentes.css';
-import { InputBurger } from './inputBurger';
+import '../componentes.css';
+import { InputBurger } from '../botones/inputBurger';
 
 export default function Adicionales(props) {
     

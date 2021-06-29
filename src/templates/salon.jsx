@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Comanda from '../componentes/comanda';
-import Menu from '../componentes/menu';
+import Comanda from '../componentes/salon/comanda';
+import Menu from '../componentes/salon/menu';
 import MenuLateral from '../componentes/menuLateral';
 import Titulo from '../componentes/titulo';
 
@@ -11,7 +11,6 @@ const Salon = () => {
             <MenuLateral/>
             <div>
             <Titulo text='Salón'/>
-            <hr></hr>
             <div className='salon-content'>
                 <div className='factura'>
                     <Comanda pedido={pedido} setPedido={setPedido}/>

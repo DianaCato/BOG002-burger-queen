@@ -63,6 +63,12 @@
     font-size: 5vh;
     color: #FF8C04;
   }
+  .titulo hr {
+    margin-top: -5vw;
+    color:blue;
+    background-color: #FF8C04;
+    height: 10px;
+  }
  
   .adicional {
       background: #ffff;
@@ -105,19 +111,22 @@ input + svg {
 input[value=" de res"]:hover + svg,
 input[value=" de res"]:checked + svg,
 input[value=" de res"]:focus + svg {
-  stroke: rgb(165, 22, 22);
+  stroke: rgb(117, 11, 11);
+  background:rgb(243, 209, 165);
 }
 
 input[value=" de pollo"]:hover + svg,
 input[value=" de pollo"]:checked + svg,
 input[value=" de pollo"]:focus + svg {
-  stroke: rgb(228, 158, 7);
+  stroke: rgb(150, 105, 8);
+  background:rgb(243, 209, 165);
 }
 
 input[value=" vegetariana"]:hover + svg,
 input[value=" vegetariana"]:checked + svg,
 input[value=" vegetariana"]:focus + svg {
-  stroke: rgb(103, 165, 22);
+  stroke: rgb(68, 116, 5);
+  background:rgb(243, 209, 165);
 }
 .adicional input[type="checkbox"]{
  margin-bottom: 6%;

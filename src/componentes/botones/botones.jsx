@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { InputDelete, InputAdd, InputRemove, InputMenu } from './inputBurger';
-import './componentes.css';
+import '../componentes.css';
 import './buttonBurger.css';
 
 

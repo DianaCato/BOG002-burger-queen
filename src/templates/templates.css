@@ -45,13 +45,7 @@ body {
   .salon-template {
     display: flex;
   }
- .salon-template hr {
-   background-color: #FF8C04;
-   margin: -7vh 0 0 2vw;
-   height: 1vh;
-   width: 25vw;
- }
- 
+  
   .salon-content {
     display: flex;
     flex-direction: row;
@@ -81,22 +75,11 @@ body {
   .cocina-template {
     display: flex;
   }
-  .cocina-template hr {
-    background-color: #FF8C04;
-    margin: -7vw 0 0 2vw;
-    height: 1vh;
-    width: 30vw;
-  }
+
   .caja-template {
     display: flex;
   }
-  .caja-template hr {
-    background-color: #FF8C04;
-    margin: -6vw 0 0 2vw;
-    height: 1vh;
-    width: 25vw;
-  }
-
+ 
   @media all and (orientation: portrait){
     .fondo-inicio{
       height: 100vh;

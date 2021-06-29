@@ -8,7 +8,6 @@ const Caja = () => {
             <MenuLateral />
             <div>
                 <Titulo text='Caja' />
-                <hr></hr>
                 <div className='salon-content'>
                     <div className='pedidos pendientes'>
                         <h1> Aqui puedes revisar las cuentas por cobrar</h1>

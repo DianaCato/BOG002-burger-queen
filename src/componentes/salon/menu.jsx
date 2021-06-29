@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ButtonOrange, ButtonSecondary } from './botones';
-import data from '../menu.json';
+import { ButtonOrange, ButtonSecondary } from '../botones/botones';
+import data from '../../menu.json';
 import Adicionales from './adicionales';
 
 function Menu({ pedido, setPedido }) {
