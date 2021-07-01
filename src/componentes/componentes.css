@@ -57,14 +57,41 @@
      margin: 2vh 1vw 0 1vw ;
      filter: drop-shadow(3px 6px 4px rgba(0, 0, 0, 0.56));
  }
+ .menuLateral ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   padding: 0%;
+   align-items: center;
+ }
+ .menuLateral li {
+  margin-top: 5px;
+  border: 1px solid black;  
+  padding: 2vh 0;
+  width: 13vw;
+  text-indent: 3vw;
+  color:#FCFBFB;
+  font-family: 'Quicksand';
+  box-shadow: inset 0px 4px 4px rgba(14, 5, 5, 0.768);
+ }
+ .menuLateral li:hover {
+   background: #912803;
+ }
+ .mesaNaranja {
+  background: #FF8C04;
+ }
+ .mesaRoja {
+  background: #900404;
+ }
 
  .titulo {
     margin: -5vh 0 0 4vw;
     font-size: 5vh;
     color: #FF8C04;
+    width: 75vw;
   }
   .titulo hr {
-    margin-top: -5vw;
+    margin-top: -4vw;
     color:blue;
     background-color: #FF8C04;
     height: 10px;

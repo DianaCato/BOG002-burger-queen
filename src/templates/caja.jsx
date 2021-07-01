@@ -5,7 +5,7 @@ import Titulo from '../componentes/titulo';
 const Caja = () => {
     return (
         <div className='caja-template'>
-            <MenuLateral />
+            <MenuLateral mesasNaranja={[]} mesasRojas={[]}/>
             <div>
                 <Titulo text='Caja' />
                 <div className='salon-content'>

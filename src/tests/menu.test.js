@@ -7,7 +7,7 @@ import {
 import firebaseConfig from '../firebaseConfig';
 
 import Salon from '../templates/salon';
-import Menu from '../componentes/menu';
+import Menu from '../componentes/salon/menu';
 
 afterEach(cleanup);
 

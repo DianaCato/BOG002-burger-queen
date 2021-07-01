@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import MenuLateral from '../componentes/menuLateral';
 import Titulo from '../componentes/titulo';
 import { useFirestore } from 'reactfire';
-import OrdenesPendientes from '../componentes/cocina/ordenesPendientes';
 import OrdenesPreparacion from '../componentes/cocina/ordenPreparacion';
 import './cocina.css';
+import chef from '../img/chef.png'
 
 const Cocina = () => {
     const [order, setOrder] = useState([]);
@@ -18,7 +18,7 @@ const Cocina = () => {
         .onSnapshot((querySnapshot) => {
           const arrayData = []
           querySnapshot.forEach((doc) => {
-            const data = doc.data()
+            const data = [doc.data(), doc.id]
             arrayData.push({ ...data })
           })
           setOrder(arrayData);
@@ -26,22 +26,35 @@ const Cocina = () => {
   
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-    const cliente = {
-        cliente: '',
-        date: '',
-        lista: [],
-        mesa:''        
-    }
-    const [preparar, setPreparar] = useState(cliente);
+    // const cliente = [{
+    //     cliente: '',
+    //     date: '',
+    //     lista: [],
+    //     mesa:''        
+    // }, '']
+    const [preparar, setPreparar] = useState([]);
+    
 
+    const iniciarPreparacion = (orden) =>{
+        const preparando = [...preparar];
+    preparando.push(orden)    
+        setPreparar(preparando)    
+    }
+   
+    
     return(
         <div className='cocina-template'>
-            <MenuLateral/>
+            <MenuLateral mesasNaranja={order} mesasRojas={preparar} preparar={iniciarPreparacion}/>
             <div>
             <Titulo text='Cocina'/>
             <div className='cocina-content'>
-                <OrdenesPendientes data={order} setPreparar={setPreparar}/>
-                <OrdenesPreparacion data={preparar}/>
+                <div>{ preparar.length === 0 ?
+                  <img className='logoMenu' src={chef} alt='logo-hambrurguer' />
+        : '' }</div>
+                {preparar.map((orden, index) =>(
+                <OrdenesPreparacion key={index} data={orden}/>    
+                ))
+                }
             </div>
             </div>
         </div>

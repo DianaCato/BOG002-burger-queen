@@ -1,5 +1,12 @@
 .cocina-content {
     display: flex;
+    margin-top: 5%;
+    height: 70vh;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.cocina-content img {
+    margin-left: 40%;
 }
 
 .ordenPendiente {
@@ -8,7 +15,7 @@
     flex-direction: column;
     width: 37vw;
     height: 70vh;
-    margin: 0 0 0 4vw;
+    margin: 0 0 20px 4vw;
     background: rgba(255, 140, 4, 0.53);
 }
 .list-orden{
@@ -57,4 +64,17 @@ width: 100%;
     background: black;
     height: 1px;
     border:none;
+}
+.listo {
+    text-decoration: line-through;
+}
+.enEspera {
+    text-decoration : none;
+}
+.ordenCocina .btn-2 {
+    margin-left: 20px;
+}
+.time {
+    font-size: 30px;
+    margin-left: 5%;
 }
