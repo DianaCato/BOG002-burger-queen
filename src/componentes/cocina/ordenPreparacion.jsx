@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFirestore } from 'reactfire';
 // import firebase from 'firebase/firestore';
+import { ButtonKitchen } from '../botones/botones';
 
 export default function OrdenesPreparacion(props) {
 
@@ -17,13 +18,22 @@ const handleTextClick = e => {
 
 const db = useFirestore();
 
-const almacenarPedido = (pedido) => {
+const eliminarFicha = () => {
 
-db.collection('orden-lista')
+    let actualizarFichas = [...props.preparar];
+     const index = props.index;
+     actualizarFichas.splice(index, 1);
+     props.setPreparar(actualizarFichas)
+ }
+
+const almacenarPedido = (pedido) => {
+    eliminarFicha();
+    db.collection('orden-lista')
     .doc().set({
         lista : pedido.lista,
         cliente: pedido.cliente,
         mesa: pedido.mesa,
+        date: new Date(),
     });
 }
 
@@ -51,10 +61,13 @@ const eliminarOrden = (orden) =>{
                 </ul>
                 <hr></hr>
                 <span className='time'>Tiempo : 00 : 00 :00</span>
-                <button className='btn-2' onClick={() => {
-                        almacenarPedido(props.data[0])
-                        eliminarOrden(props.data[1])
-                    }}>HECHO</button>
+                <ButtonKitchen 
+                    iniciar={false}
+                    data={props.data[0]} 
+                    dataId={props.data[1]} 
+                    almacenarPedido={almacenarPedido} 
+                    eliminarOrden={eliminarOrden}                     
+                />
             </div>
         </div>
     )

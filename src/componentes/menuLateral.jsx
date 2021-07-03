@@ -12,7 +12,7 @@ export default function MenuLateral(props) {
             <img className='logoMenu' src={logoBurger} alt='logo-hambrurguer' />
             </Link>
             <div>
-                <EstadoMesas mesasNaranja={props.mesasNaranja} mesasRojas={props.mesasRojas} preparar={props.preparar}/>
+                <EstadoMesas mesasNaranja={props.mesasNaranja} mesasRojas={props.mesasRojas} handleClick={props.handleClick}/>
             </div>
         </div>
 

@@ -26,12 +26,7 @@ const Cocina = () => {
   
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-    // const cliente = [{
-    //     cliente: '',
-    //     date: '',
-    //     lista: [],
-    //     mesa:''        
-    // }, '']
+   
     const [preparar, setPreparar] = useState([]);
     
 
@@ -41,10 +36,9 @@ const Cocina = () => {
         setPreparar(preparando)    
     }
    
-    
     return(
         <div className='cocina-template'>
-            <MenuLateral mesasNaranja={order} mesasRojas={preparar} preparar={iniciarPreparacion}/>
+            <MenuLateral mesasNaranja={order} mesasRojas={preparar} handleClick={iniciarPreparacion}/>
             <div>
             <Titulo text='Cocina'/>
             <div className='cocina-content'>
@@ -52,7 +46,7 @@ const Cocina = () => {
                   <img className='logoMenu' src={chef} alt='logo-hambrurguer' />
         : '' }</div>
                 {preparar.map((orden, index) =>(
-                <OrdenesPreparacion key={index} data={orden}/>    
+                <OrdenesPreparacion key={index} data={orden} index= {index} preparar={preparar} setPreparar={setPreparar}/>    
                 ))
                 }
             </div>

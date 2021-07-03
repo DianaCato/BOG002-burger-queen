@@ -36,7 +36,7 @@ export function ButtonOrange(props) {
 
 export function ButtonComanda(props) {
     const [content, setContent] = useState(false);
-    
+
 
     return (
         <div className="button-comanda">
@@ -46,16 +46,40 @@ export function ButtonComanda(props) {
                         setContent(false)
                     }}> X </div>
                 <div className="options">
-                    <InputAdd producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
-                    <InputRemove producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
-                    <InputDelete producto={props.producto} pedido={props.pedido} setPedido={props.setPedido}/>
+                    <InputAdd producto={props.producto} pedido={props.pedido} setPedido={props.setPedido} />
+                    <InputRemove producto={props.producto} pedido={props.pedido} setPedido={props.setPedido} />
+                    <InputDelete producto={props.producto} pedido={props.pedido} setPedido={props.setPedido} />
                 </div>
             </div>
                 : <button className="button-change" onClick={() => {
                     setContent(true)
-                }}> <InputMenu/></button>}
+                }}> <InputMenu /></button>}
 
 
         </div>
+    )
+}
+
+export function ButtonKitchen({ iniciar, almacenarPedido, eliminarOrden, data, dataId }) {
+    const [start, setStart] = useState(iniciar)
+
+
+    if (!start) {
+        return (
+            <button className="btn-2" onClick={() => {
+                setStart(true)
+                eliminarOrden(dataId)
+            }
+            }>
+                Iniciar
+            </button>
+        )
+    }
+    return (
+        <button className="btn-2" onClick={() => {
+            almacenarPedido(data)
+        }}>
+            Entregar
+        </button>
     )
 }

@@ -43,12 +43,14 @@ const Salon = () => {
     
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
-   
+      const entregarPedido = () =>{
+        alert('¿ Has completado la entrega?')    
+    }
 
 
     return(
         <div className='salon-template'>
-            <MenuLateral mesasNaranja={ordeneslistas} mesasRojas={ordenesActivas}/>
+            <MenuLateral mesasNaranja={ordeneslistas} mesasRojas={ordenesActivas} handleClick={entregarPedido}/>
             <div>
             <Titulo text='Salón'/>
             <div className='salon-content'>
