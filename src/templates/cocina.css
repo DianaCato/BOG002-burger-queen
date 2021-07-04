@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: column;
     width: 37vw;
-    height: 70vh;
+    height: 60vh;
     margin: 0 0 20px 4vw;
     background: rgba(255, 140, 4, 0.53);
 }
@@ -37,33 +37,61 @@ width: 100%;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
 }
+.datos-cocina{
+    background-color:#FF8C04;
+}
 .ordenCocina {
     background:blanchedalmond;
     margin-top: 2vh;
     width: 35vw;
-    height: 53vh;
+    height: 55vh;
     border:solid 1px black;
 }
-.ordenCocina div {
+.ordenCocina div:first-child {
     display: flex;
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 22px;
     height: 10vh;
     border-bottom: solid 1px black;
 }
-.list-orden span {
-    font-size: 30px;
+.list-cocina {
+    height: 37vh ;
+    overflow: auto;
+    border-bottom: solid 1px;
+}
+.li-orden {
+    display: flex;
+    font-family:'Quicksand';
+    font-size: 20px;
     padding: 5px;
-    margin-left: 10px;
+    height: 50px;
+}
+.orden-preparacion .li-orden:first-child {
+    height: 30px;
+}
+.li-orden div:first-child {
+   width: 50px;
+   height: 30px;
+   border: none;
+   margin-left: 7px;
+}
+.span-cocina {
+    font-weight: 800;
+    color:#900404;
+}
+.span-cocina:nth-child(2) {
+    font-weight: 800;
+    margin-left: 20% !important;
 }
 .orden-preparacion {
-    height: 55%;
+    list-style: none;
     overflow: auto;
+    margin: 0 0 0 0;
+    padding: 5px;
 }
-.ordenPendiente hr {
-    background: black;
-    height: 1px;
-    border:none;
+.orden-preparacion div:nth-child(2n) {
+    text-justify:center;
+    margin-left: 3vw;
 }
 .listo {
     text-decoration: line-through;
@@ -74,7 +102,21 @@ width: 100%;
 .ordenCocina .btn-2 {
     margin-left: 20px;
 }
+.footKitchen{
+    display: flex;
+    padding: 5px;
+    justify-content: center;    
+}
 .time {
-    font-size: 30px;
-    margin-left: 5%;
+    height: 6vh !important;
+    background: #ffff;
+    width: 20vw;
+    font-size: 35px !important;
+    border: solid 1px;
+}
+.timer-kitchen{
+    margin-left: 0 !important;
+}
+.footKitchen span {
+    margin-left: -30px;
 }

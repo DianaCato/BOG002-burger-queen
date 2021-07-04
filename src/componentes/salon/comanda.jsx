@@ -42,7 +42,7 @@ export default function Comanda({ pedido, setPedido }) {
                 lista,
                 cliente: nombreCliente,
                 mesa: numeroMesa,
-                date: new Date()
+                date: Date.now()
             });
     }
     const handleReset = () => {
