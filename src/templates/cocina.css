@@ -123,6 +123,9 @@ width: 100%;
  .cocina-content{
      height: 78vh;
  }
+ .cocina-content img {
+     margin-left: 20%;
+ }
  .ordenPendiente {
      height: 39vh;
  } 
