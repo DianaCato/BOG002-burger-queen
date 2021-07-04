@@ -44,14 +44,13 @@ width: 100%;
     background:blanchedalmond;
     margin-top: 2vh;
     width: 35vw;
-    height: 55vh;
+    height: 56vh;
     border:solid 1px black;
 }
 .ordenCocina div:first-child {
     display: flex;
     justify-content: space-around;
     font-size: 22px;
-    height: 10vh;
     border-bottom: solid 1px black;
 }
 .list-cocina {
@@ -108,7 +107,7 @@ width: 100%;
     justify-content: center;    
 }
 .time {
-    height: 6vh !important;
+    height: 6vh;
     background: #ffff;
     width: 20vw;
     font-size: 35px !important;
@@ -119,4 +118,44 @@ width: 100%;
 }
 .footKitchen span {
     margin-left: -30px;
+}
+@media all and (orientation: portrait) {
+ .cocina-content{
+     height: 78vh;
+ }
+ .ordenPendiente {
+     height: 39vh;
+ } 
+ .ordenCocina {
+     height: 31vh;
+     margin-top: 10px;
+ }
+ .datos-cocina {
+     padding: 10px;
+     height: 4.5vh !important;
+ }
+ .datos-cocina h3 {
+     margin: 0 0 0 0;
+ }
+ .list-cocina {
+     height: 25vh;
+     border-bottom: none;
+ }
+ .footKitchen {
+     height: 5vh;
+ }
+ .footKitchen .btn-2 {
+     height: 4vh;
+     width: 12vw;
+ }
+ .time {
+     height: 4vh;
+     width: 25vw;
+     font-size: 20px;
+ }
+ .timer-kitchen {
+     height: 4vh;
+     margin-left: -10px;
+ }
+
 }
