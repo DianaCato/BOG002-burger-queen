@@ -33,7 +33,8 @@ export default function Factura({ factura, setFactura }) {
             cliente: data[0].cliente,
             mesa: data[0].mesa,
             tiempo: minutos + segundos,
-            date: new Date(DateNow).toString()
+            date: new Date(DateNow).toString(),
+            total,
         });
         db.collection("caja").doc(data[1]).delete();
         setFactura([])

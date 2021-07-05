@@ -4,10 +4,11 @@
     align-items: center;
     height: 70vh;
     width: 35vw;
-    padding: 10px;
+    padding: 20px;
     margin-right: 2vw;
     background-color: rgba(255, 140, 4, 0.53);
 }
+
 .factura-caja h2 {
     font-size: 32px;
     padding: 10px;
@@ -76,4 +77,90 @@
 .detalle-caja span:nth-child(2){
     color:#900404;
     font-weight: 800;
+}
+.registro-caja{
+    height: 90%;
+    overflow: auto;
+    width: 100%;
+}
+.registro {
+    list-style: none;
+    padding: 10px;
+    margin-top: 0;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+.registro li {
+border: solid 1px #c26c03;
+margin-bottom: 10px;
+background:#FF8C04;
+overflow: auto;
+}
+.up {
+    border-left: 5px solid #900404;
+}
+.sum-up{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px;
+    font-size: 20px;
+}
+.salon-content {
+    margin-left: 4vw;
+}
+.salon-content .factura-caja:first-child {
+    width: 45%;
+    
+}
+.registro li div:first-child {
+color: #900404;
+overflow: hidden;
+width: 25%;
+margin-right: 3px;
+}
+.registro li div:nth-child(2) {
+    margin-top: 3px;
+    padding: 2px;
+    height: 32px;
+    overflow: hidden;
+}
+details[open] {
+    background: blanchedalmond;
+    border-bottom: 1px dashed wheat;
+}
+.up[open] > summary {
+    background:#FF8C04;
+}
+details details[open]{
+    background: none;
+    width: 25vw;
+}
+.opciones-historial {
+    color: #900404;
+    border-bottom: #900404 1px dashed;
+}
+details p {
+    margin-left: 15px;
+}
+@media all and (orientation: portrait) {
+    hr {
+        margin-top: -5vh !important;
+    } 
+    .pedidos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .caja-template .menuLateral {
+        height: 120vh;
+    }
+    .factura-caja {
+        width: 60vw;
+        height: 50vh;
+    }
+    .factura-caja:first-child {
+        width: 60vw !important;
+        height: 40vh;
+        margin-top: 4vh;
+    }
 }
