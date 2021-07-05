@@ -34,7 +34,7 @@ export default function OrdenesPreparacion(props) {
                 lista: pedido.lista,
                 cliente: pedido.cliente,
                 mesa: pedido.mesa,
-                date: Date.now(),
+                date: pedido.date,
             });
     }
 

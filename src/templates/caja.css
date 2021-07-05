@@ -1,0 +1,79 @@
+.factura-caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 35vw;
+    padding: 10px;
+    margin-right: 2vw;
+    background-color: rgba(255, 140, 4, 0.53);
+}
+.factura-caja h2 {
+    font-size: 32px;
+    padding: 10px;
+    margin: 0;
+}
+.data-pagar {
+    width: 100%;
+    height: 55vh;
+    margin-bottom: 10px;
+    background-color:blanchedalmond ;
+}
+.data-caja {
+    display: flex;
+    border-bottom: 1px solid;
+    height: 10%;
+    padding: 3px;
+    background:#FF8C04 ;
+}
+.data-caja h3 {
+    font-size: 25px;
+    margin: 0 0 0 3%;
+    overflow:hidden;
+}
+.data-caja h3:first-child{
+    width: 60%;
+}
+.data-caja span {
+    color: #900404;
+}
+.data-pagar ul {
+    list-style: none;
+    margin-left: -20px;
+}
+.data-pagar ul li:first-child{
+    margin-right: 30px;
+    text-indent: 4px;
+    font-weight: bolder;
+    text-align-last: justify;
+    font-size: 26px;
+}
+.orden-caja {
+    height: 75%;
+    overflow: auto;
+    border-bottom: 1px solid;
+}
+.span-1 {
+    width: 10%;
+    margin-left: 5%;
+  }
+  .span-2 {
+    width: 56%;
+    margin-left: 4%; 
+    overflow: hidden;
+  }
+.span-3 {
+    margin-left: 6%;
+}
+.detalle-caja {
+    font-size: 25px;
+    margin-top: 3%;
+}
+.detalle-caja span:first-child{
+    margin-right: 10%;
+    margin-left: 15%;
+}
+.detalle-caja span:nth-child(2){
+    color:#900404;
+    font-weight: 800;
+}
